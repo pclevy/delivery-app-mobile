@@ -29,8 +29,10 @@ const SignIn = ({ signInRequest, signUpRequest, loading }) => {
 
   const handleSubmit = () => {
     if (loginActive) {
+      // console.log(email, password);
       signInRequest(email, password);
     } else {
+      // console.log(name, email, password);
       signUpRequest(name, email, password);
     }
   };
